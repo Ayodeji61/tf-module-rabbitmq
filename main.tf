@@ -11,7 +11,7 @@ resource "aws_instance" "rabbitmq" {
     connection {
       host = self.private_ip
       user = local.SSH_USER
-      pass = local.SSH_PASS
+      password = local.SSH_PASS
     }
 
     inline = [
